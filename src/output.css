@@ -9,6 +9,7 @@
       "Courier New", monospace;
     --color-red-300: oklch(80.8% 0.114 19.571);
     --color-amber-100: oklch(96.2% 0.059 95.617);
+    --color-amber-200: oklch(92.4% 0.12 95.746);
     --color-white: #fff;
     --spacing: 0.25rem;
     --font-weight-semibold: 600;
@@ -185,14 +186,14 @@
   .mt-\[-0px\] {
     margin-top: -0px;
   }
-  .mt-\[30px\] {
-    margin-top: 30px;
-  }
   .mt-\[40px\] {
     margin-top: 40px;
   }
-  .mt-\[200px\] {
-    margin-top: 200px;
+  .mt-\[50px\] {
+    margin-top: 50px;
+  }
+  .mt-\[100px\] {
+    margin-top: 100px;
   }
   .mt-\[300px\] {
     margin-top: 300px;
@@ -215,17 +216,20 @@
   .table {
     display: table;
   }
+  .h-\[1\] {
+    height: 1;
+  }
   .h-\[56px\] {
     height: 56px;
   }
   .h-\[80px\] {
     height: 80px;
   }
+  .h-\[250px\] {
+    height: 250px;
+  }
   .h-\[300px\] {
     height: 300px;
-  }
-  .h-\[308px\] {
-    height: 308px;
   }
   .h-\[350px\] {
     height: 350px;
@@ -251,23 +255,23 @@
   .h-\[1156px\] {
     height: 1156px;
   }
-  .h-\[1340px\] {
-    height: 1340px;
-  }
-  .h-\[2000px\] {
-    height: 2000px;
-  }
-  .h-\[2400px\] {
-    height: 2400px;
-  }
-  .h-\[2500px\] {
-    height: 2500px;
+  .h-\[1303px\] {
+    height: 1303px;
   }
   .h-\[2550px\] {
     height: 2550px;
   }
   .h-\[2600px\] {
     height: 2600px;
+  }
+  .h-\[2650px\] {
+    height: 2650px;
+  }
+  .h-\[2700px\] {
+    height: 2700px;
+  }
+  .h-\[2900px\] {
+    height: 2900px;
   }
   .w-\[100px\] {
     width: 100px;
@@ -364,14 +368,8 @@
     --tw-border-style: solid;
     border-style: solid;
   }
-  .border-\[black\] {
-    border-color: black;
-  }
   .border-\[gray\] {
     border-color: gray;
-  }
-  .border-\[whi\] {
-    border-color: whi;
   }
   .border-\[white\] {
     border-color: white;
@@ -385,8 +383,8 @@
   .bg-amber-100 {
     background-color: var(--color-amber-100);
   }
-  .bg-red-300 {
-    background-color: var(--color-red-300);
+  .bg-amber-200 {
+    background-color: var(--color-amber-200);
   }
   .bg-gradient-to-b {
     --tw-gradient-position: to bottom in oklab;
@@ -395,20 +393,11 @@
   .bg-\[url\(01\.png\)\] {
     background-image: url(01.png);
   }
-  .bg-\[url\(123\.\)\] {
-    background-image: url(123.);
-  }
-  .bg-\[url\(123\.jpg\)\] {
-    background-image: url(123.jpg);
-  }
   .bg-\[url\(123\.png\)\] {
     background-image: url(123.png);
   }
   .bg-\[url\(image\.png\)\] {
     background-image: url(image.png);
-  }
-  .bg-\[url\(lll\.png\)\] {
-    background-image: url(lll.png);
   }
   .from-\[\#02304766\]\/100 {
     --tw-gradient-from: #02304766;
@@ -437,6 +426,9 @@
   }
   .pt-\[50px\] {
     padding-top: 50px;
+  }
+  .pt-\[75px\] {
+    padding-top: 75px;
   }
   .pt-\[100px\] {
     padding-top: 100px;
@@ -544,6 +536,11 @@
   .lg\:h-\[584px\] {
     @media (width >= 64rem) {
       height: 584px;
+    }
+  }
+  .lg\:h-\[1303px\] {
+    @media (width >= 64rem) {
+      height: 1303px;
     }
   }
   .lg\:h-\[1340px\] {
