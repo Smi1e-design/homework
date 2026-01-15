@@ -7,9 +7,8 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-red-200: oklch(88.5% 0.062 18.334);
+    --color-red-300: oklch(80.8% 0.114 19.571);
     --color-amber-100: oklch(96.2% 0.059 95.617);
-    --color-amber-200: oklch(92.4% 0.12 95.746);
     --color-white: #fff;
     --spacing: 0.25rem;
     --font-weight-semibold: 600;
@@ -186,6 +185,18 @@
   .mt-\[-0px\] {
     margin-top: -0px;
   }
+  .mt-\[30px\] {
+    margin-top: 30px;
+  }
+  .mt-\[40px\] {
+    margin-top: 40px;
+  }
+  .mt-\[200px\] {
+    margin-top: 200px;
+  }
+  .mt-\[300px\] {
+    margin-top: 300px;
+  }
   .mt-\[900px\] {
     margin-top: 900px;
   }
@@ -201,6 +212,9 @@
   .hidden {
     display: none;
   }
+  .table {
+    display: table;
+  }
   .h-\[56px\] {
     height: 56px;
   }
@@ -209,6 +223,12 @@
   }
   .h-\[300px\] {
     height: 300px;
+  }
+  .h-\[308px\] {
+    height: 308px;
+  }
+  .h-\[350px\] {
+    height: 350px;
   }
   .h-\[370px\] {
     height: 370px;
@@ -231,6 +251,24 @@
   .h-\[1156px\] {
     height: 1156px;
   }
+  .h-\[1340px\] {
+    height: 1340px;
+  }
+  .h-\[2000px\] {
+    height: 2000px;
+  }
+  .h-\[2400px\] {
+    height: 2400px;
+  }
+  .h-\[2500px\] {
+    height: 2500px;
+  }
+  .h-\[2550px\] {
+    height: 2550px;
+  }
+  .h-\[2600px\] {
+    height: 2600px;
+  }
   .w-\[100px\] {
     width: 100px;
   }
@@ -246,6 +284,9 @@
   .w-\[256px\] {
     width: 256px;
   }
+  .w-\[350px\] {
+    width: 350px;
+  }
   .max-w-\[256px\] {
     max-width: 256px;
   }
@@ -260,6 +301,12 @@
   }
   .max-w-\[1440px\] {
     max-width: 1440px;
+  }
+  .border-collapse {
+    border-collapse: collapse;
+  }
+  .resize {
+    resize: both;
   }
   .flex-col {
     flex-direction: column;
@@ -297,9 +344,17 @@
   .rounded-xl {
     border-radius: var(--radius-xl);
   }
+  .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+  }
   .border-\[1px\] {
     border-style: var(--tw-border-style);
     border-width: 1px;
+  }
+  .border-\[2px\] {
+    border-style: var(--tw-border-style);
+    border-width: 2px;
   }
   .border-none {
     --tw-border-style: none;
@@ -309,8 +364,17 @@
     --tw-border-style: solid;
     border-style: solid;
   }
+  .border-\[black\] {
+    border-color: black;
+  }
   .border-\[gray\] {
     border-color: gray;
+  }
+  .border-\[whi\] {
+    border-color: whi;
+  }
+  .border-\[white\] {
+    border-color: white;
   }
   .bg-\[\#FB8500\] {
     background-color: #FB8500;
@@ -321,6 +385,9 @@
   .bg-amber-100 {
     background-color: var(--color-amber-100);
   }
+  .bg-red-300 {
+    background-color: var(--color-red-300);
+  }
   .bg-gradient-to-b {
     --tw-gradient-position: to bottom in oklab;
     background-image: linear-gradient(var(--tw-gradient-stops));
@@ -328,8 +395,20 @@
   .bg-\[url\(01\.png\)\] {
     background-image: url(01.png);
   }
+  .bg-\[url\(123\.\)\] {
+    background-image: url(123.);
+  }
+  .bg-\[url\(123\.jpg\)\] {
+    background-image: url(123.jpg);
+  }
+  .bg-\[url\(123\.png\)\] {
+    background-image: url(123.png);
+  }
   .bg-\[url\(image\.png\)\] {
     background-image: url(image.png);
+  }
+  .bg-\[url\(lll\.png\)\] {
+    background-image: url(lll.png);
   }
   .from-\[\#02304766\]\/100 {
     --tw-gradient-from: #02304766;
@@ -347,6 +426,9 @@
   .bg-cover {
     background-size: cover;
   }
+  .bg-center {
+    background-position: center;
+  }
   .bg-no-repeat {
     background-repeat: no-repeat;
   }
@@ -358,6 +440,9 @@
   }
   .pt-\[100px\] {
     padding-top: 100px;
+  }
+  .pb-\[20px\] {
+    padding-bottom: 20px;
   }
   .text-center {
     text-align: center;
@@ -409,6 +494,13 @@
   .text-white {
     color: var(--color-white);
   }
+  .underline {
+    text-decoration-line: underline;
+  }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
+  }
   .lg\:m-0 {
     @media (width >= 64rem) {
       margin: calc(var(--spacing) * 0);
@@ -452,6 +544,11 @@
   .lg\:h-\[584px\] {
     @media (width >= 64rem) {
       height: 584px;
+    }
+  }
+  .lg\:h-\[1340px\] {
+    @media (width >= 64rem) {
+      height: 1340px;
     }
   }
   .lg\:w-\[100px\] {
@@ -567,6 +664,11 @@
   syntax: "*";
   inherits: false;
 }
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
@@ -581,6 +683,7 @@
       --tw-gradient-via-position: 50%;
       --tw-gradient-to-position: 100%;
       --tw-font-weight: initial;
+      --tw-outline-style: solid;
     }
   }
 }
