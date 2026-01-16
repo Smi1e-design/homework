@@ -7,7 +7,6 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-red-300: oklch(80.8% 0.114 19.571);
     --color-amber-100: oklch(96.2% 0.059 95.617);
     --color-amber-200: oklch(92.4% 0.12 95.746);
     --color-white: #fff;
@@ -15,6 +14,7 @@
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
     --radius-xl: 0.75rem;
+    --radius-2xl: 1rem;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
   }
@@ -216,17 +216,14 @@
   .table {
     display: table;
   }
-  .h-\[1\] {
-    height: 1;
-  }
   .h-\[56px\] {
     height: 56px;
   }
   .h-\[80px\] {
     height: 80px;
   }
-  .h-\[250px\] {
-    height: 250px;
+  .h-\[160px\] {
+    height: 160px;
   }
   .h-\[300px\] {
     height: 300px;
@@ -243,6 +240,9 @@
   .h-\[598px\] {
     height: 598px;
   }
+  .h-\[618px\] {
+    height: 618px;
+  }
   .h-\[700px\] {
     height: 700px;
   }
@@ -252,20 +252,17 @@
   .h-\[838px\] {
     height: 838px;
   }
+  .h-\[1000px\] {
+    height: 1000px;
+  }
+  .h-\[1100px\] {
+    height: 1100px;
+  }
   .h-\[1156px\] {
     height: 1156px;
   }
-  .h-\[1303px\] {
-    height: 1303px;
-  }
-  .h-\[2550px\] {
-    height: 2550px;
-  }
-  .h-\[2600px\] {
-    height: 2600px;
-  }
-  .h-\[2650px\] {
-    height: 2650px;
+  .h-\[1200px\] {
+    height: 1200px;
   }
   .h-\[2700px\] {
     height: 2700px;
@@ -284,6 +281,9 @@
   }
   .w-\[243px\] {
     width: 243px;
+  }
+  .w-\[255px\] {
+    width: 255px;
   }
   .w-\[256px\] {
     width: 256px;
@@ -345,6 +345,12 @@
   .gap-\[24px\] {
     gap: 24px;
   }
+  .rounded-2xl {
+    border-radius: var(--radius-2xl);
+  }
+  .rounded-\[10px\] {
+    border-radius: 10px;
+  }
   .rounded-xl {
     border-radius: var(--radius-xl);
   }
@@ -380,21 +386,33 @@
   .bg-\[\#FFFFFF\] {
     background-color: #FFFFFF;
   }
+  .bg-\[url\] {
+    background-color: url;
+  }
   .bg-amber-100 {
     background-color: var(--color-amber-100);
   }
   .bg-amber-200 {
     background-color: var(--color-amber-200);
   }
+  .bg-white {
+    background-color: var(--color-white);
+  }
   .bg-gradient-to-b {
     --tw-gradient-position: to bottom in oklab;
     background-image: linear-gradient(var(--tw-gradient-stops));
+  }
+  .bg-\[url\(\)\] {
+    background-image: url();
   }
   .bg-\[url\(01\.png\)\] {
     background-image: url(01.png);
   }
   .bg-\[url\(123\.png\)\] {
     background-image: url(123.png);
+  }
+  .bg-\[url\(345\.png\)\] {
+    background-image: url(345.png);
   }
   .bg-\[url\(image\.png\)\] {
     background-image: url(image.png);
@@ -424,6 +442,12 @@
   .pt-25 {
     padding-top: calc(var(--spacing) * 25);
   }
+  .pt-\[20px\] {
+    padding-top: 20px;
+  }
+  .pt-\[30px\] {
+    padding-top: 30px;
+  }
   .pt-\[50px\] {
     padding-top: 50px;
   }
@@ -438,6 +462,9 @@
   }
   .text-center {
     text-align: center;
+  }
+  .align-middle {
+    vertical-align: middle;
   }
   .text-\[12px\] {
     font-size: 12px;
@@ -508,6 +535,11 @@
       margin-top: 0;
     }
   }
+  .lg\:mt-\[100px\] {
+    @media (width >= 64rem) {
+      margin-top: 100px;
+    }
+  }
   .lg\:ml-0 {
     @media (width >= 64rem) {
       margin-left: calc(var(--spacing) * 0);
@@ -536,6 +568,11 @@
   .lg\:h-\[584px\] {
     @media (width >= 64rem) {
       height: 584px;
+    }
+  }
+  .lg\:h-\[618px\] {
+    @media (width >= 64rem) {
+      height: 618px;
     }
   }
   .lg\:h-\[1303px\] {
